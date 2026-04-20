@@ -267,6 +267,15 @@ public class InventoryTest {
         assertEquals(9, backStagePass.getSellIn());
     }
 
+    //P5b
+    @Test
+    public void p5b_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
     //P5c
     @Test
     public void p5c_quality() {
@@ -276,8 +285,287 @@ public class InventoryTest {
         assertEquals(50, backStagePass.getQuality());
     }
 
+    //P5d
+    @Test
+    public void p5d_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 6, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(5, backStagePass.getSellIn());
+    }
+
+    //P5d
+    @Test
+    public void p5d_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(27, backStagePass.getQuality());
+    }
+
+    //P5e
+    @Test
+    public void p5e_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 6, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(5, backStagePass.getSellIn());
+    }
+
+    //P5e
+    @Test
+    public void p5e_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
+    //P5f
+    @Test
+    public void p5f_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 6, 49);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(5, backStagePass.getSellIn());
+    }
+
+    //P5f
+    @Test
+    public void p5f_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
+    //P6
+    @Test
+    public void p6_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 4, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(3, backStagePass.getSellIn());
+    }
+
+    //P6b
+    @Test
+    public void p6b_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(4, backStagePass.getSellIn());
+    }
+
+    //P6b
+    @Test
+    public void p6b_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
+    //P6c
+    @Test
+    public void p6c_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(4, backStagePass.getSellIn());
+    }
+
+    //P6c
+    @Test
+    public void p6c_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
 
 
+    //P6d
+    @Test
+    public void p6d_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 48);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(4, backStagePass.getSellIn());
+    }
 
+    //P6e
+    @Test
+    public void p6e_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getSellIn());
+    }
+
+    //P6e
+    @Test
+    public void p6e_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(28, backStagePass.getQuality());
+    }
+
+
+    //P6f
+    @Test
+    public void p6f_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getSellIn());
+    }
+
+    //P6f
+    @Test
+    public void p6f_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 50);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
+
+    //P6g
+    @Test
+    public void p6g_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 49);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getSellIn());
+    }
+
+    //P6g
+    @Test
+    public void p6g_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 49);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
+    //P6h
+    @Test
+    public void p6h_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 48);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getSellIn());
+    }
+
+    //P6h
+    @Test
+    public void p6h_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 1, 48);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(50, backStagePass.getQuality());
+    }
+
+    //P7
+    @Test
+    public void p7_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(-1, backStagePass.getSellIn());
+    }
+
+    //P7
+    @Test
+    public void p7_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getQuality());
+    }
+
+    //P8
+    @Test
+    public void p8_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 0);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(-9, backStagePass.getSellIn());
+    }
+
+    //P9b
+    @Test
+    public void p9b_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 0);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(9, backStagePass.getSellIn());
+    }
+
+    //P10
+    @Test
+    public void p10_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(-9, backStagePass.getSellIn());
+    }
+
+
+    //P10b
+    @Test
+    public void p10b_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 1);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(-9, backStagePass.getSellIn());
+    }
+
+    //P10b
+    @Test
+    public void p10b_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 1);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getQuality());
+    }
+
+    //P10c
+    @Test
+    public void p10c_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 0);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(-9, backStagePass.getSellIn());
+    }
+
+    //P10c
+    @Test
+    public void p10c_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 0);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(0, backStagePass.getQuality());
+    }
+
+    //P10d
+    @Test
+    public void p10d_shellIn() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(-1, backStagePass.getSellIn());
+    }
+
+    //P10d
+    @Test
+    public void p10d_quality() {
+        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 25);
+        Inventory inventory = createInventory(backStagePass);
+        inventory.updateQuality();
+        assertEquals(23, backStagePass.getQuality());
+    }
 
 }
