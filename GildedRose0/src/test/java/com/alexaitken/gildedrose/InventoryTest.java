@@ -495,77 +495,81 @@ public class InventoryTest {
         assertEquals(-9, backStagePass.getSellIn());
     }
 
+    //CAMBIAR A DEXTER :D
+
     //P9b
     @Test
-    public void p9b_quality() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 0);
-        Inventory inventory = createInventory(backStagePass);
+    public void p9b_shellIn() {
+        Item normalItem = new Item("+5 Dexterity Vest", 10, 0);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(9, backStagePass.getSellIn());
+        assertEquals(9, normalItem.getSellIn());
     }
 
     //P10
     @Test
     public void p10_shellIn() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 25);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", -8, 25);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(-9, backStagePass.getSellIn());
+        assertEquals(-9, normalItem.getSellIn());
     }
-
 
     //P10b
     @Test
     public void p10b_shellIn() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 1);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", -8, 1);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(-9, backStagePass.getSellIn());
+        assertEquals(-9, normalItem.getSellIn());
     }
 
     //P10b
     @Test
     public void p10b_quality() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 1);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", -8, 1);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(0, backStagePass.getQuality());
+        assertEquals(0, normalItem.getQuality());
     }
+
 
     //P10c
     @Test
     public void p10c_shellIn() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 0);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", -8, 0);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(-9, backStagePass.getSellIn());
+        assertEquals(-9, normalItem.getSellIn());
     }
+
 
     //P10c
     @Test
     public void p10c_quality() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", -8, 0);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", -8, 0);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(0, backStagePass.getQuality());
+        assertEquals(0, normalItem.getQuality());
     }
+
 
     //P10d
     @Test
     public void p10d_shellIn() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 25);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", 0, 25);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(-1, backStagePass.getSellIn());
+        assertEquals(-1, normalItem.getSellIn());
     }
 
     //P10d
     @Test
     public void p10d_quality() {
-        Item backStagePass = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 25);
-        Inventory inventory = createInventory(backStagePass);
+        Item normalItem = new Item("+5 Dexterity Vest", 0, 25);
+        Inventory inventory = createInventory(normalItem);
         inventory.updateQuality();
-        assertEquals(23, backStagePass.getQuality());
+        assertEquals(23, normalItem.getQuality());
     }
 
 }
