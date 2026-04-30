@@ -597,9 +597,7 @@ public class InventoryTest {
     public void sulfuras_should_not_change_even_when_sellIn_is_negative() {
         Item sulfuras = new Item("Sulfuras, Hand of Ragnaros", -1, 80);
         Inventory inventory = createInventory(sulfuras);
-
         inventory.updateQuality();
-
         assertEquals(80, sulfuras.getQuality());
         assertEquals(-1, sulfuras.getSellIn());
     }
